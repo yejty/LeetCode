@@ -1,6 +1,6 @@
 ﻿namespace LeetCode;
 
-public class PalindromeNumber
+public class ReverseNumberSolution
 {
     public bool IsPalindrome(int x)
     {
