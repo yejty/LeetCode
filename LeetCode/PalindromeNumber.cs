@@ -1,0 +1,24 @@
+﻿namespace LeetCode;
+
+public class PalindromeNumber
+{
+    public bool IsPalindrome(int x)
+    {
+        if (x < 0)
+            return false;
+
+        int reversed = 0;
+        int original = x;
+
+        while (x > 0)
+        {
+            int remainder = x % 10;
+            reversed = reversed*10 + remainder;
+            x = x / 10; 
+        }
+        
+        if (reversed == original)
+            return true;
+        return false;
+    }
+}
